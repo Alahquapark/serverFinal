@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <title>Wiki2 Proiektua</title>
+    <link rel="stylesheet" href="../css/wiki.css" type="text/css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark fondo">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logoproyectoWhite.png" alt="logo" style="width:40px;">
+        </a>
+        <ul class="navbar-nav" id="titulo">
+          <li class="nav-item active">
+            <a class="nav-link navbar-brand" href="../index.html">
+              <h1>SERVER WIKI 2</h1>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Hasiera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="laburpena.html">Laburpena</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"> Tutorialak </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="tutorialDebian.html">Debian</a>
+                <a class="dropdown-item" href="tutorialDNS.html">DNS</a>
+                <a class="dropdown-item" href="tutorialFTP.html">FTP</a>
+                <a class="dropdown-item" href="tutorialProxmox.html">Proxmox</a>
+                <a class="dropdown-item" href="tutorialApache.html">Apache</a>
+                <a class="dropdown-item" href="tutorialGithub.html">Github</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"> Bideoak </a>
+              <div class="dropdown-menu ">
+                <a class="dropdown-item " href="bideoaDebian.html">Debian</a>
+                <a class="dropdown-item " href="bideoaDNS.html">DNS</a>
+                <a class="dropdown-item " href="bideoaFTP.html">FTP</a>
+                <a class="dropdown-item " href="bideoaProxmox.html">Proxmox</a>
+                <a class="dropdown-item active" href="bideoaApache.html">Apache</a>
+                <a class="dropdown-item" href="bideoaGithub.html">Github</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------- -->
+
+    <!-- MIGAS -->
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="../index.html">Hasiera</a>
+      <span class="breadcrumb-item active">Laburpena</span>
+    </nav>
+
+    <!-- -------- -->
+    <h2>LABURPENA</h2>
+
+    <!------ 1 ------>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="pFondo">Zer da FTP?</h5>
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+              <p class="pFondo">
+                  FTP edo File Transfer Protocol (euskaraz: Fitxategien Transferentziarako Protokoloa) edozein sistema eragileren artean fitxategien elkartrukatzea ahalbidetzen duen sare protokoloa da. RFC 959 agirian deskribatzen den protokolo hau 1971n sortu zen, eta gaur egun fitxategi transferentziarako beste protokolo batzuk existitzen diren arren oso erabilia da oraindik.
+              </p>
+              <p class="pFondo">
+                  FTP protokoloan oinarritzen den edozein aplikazioren osagai garrantzitsuenak hauek dira:              </p>
+              <p class="pFondo">
+                  Bezeroa: Ondoko hiru zati hauek ditu: erabiltzailearekiko interfazea, fitxategi-sistema lokalarekiko interfazea, eta zerbitzariarekiko harremanetarako zatia. Azken hau da FTP protokoloak arautzen duena eta estandarizatuta dagoena. Modu askotako bezeroak daude merkatuan: komando-lerroko interfazea dutenak eta leiho moduko interfazedunak, doakoak eta ordaindu beharrekoak ...              </p>
+              <p class="pFondo">
+                  Zerbitzariak: fitxategi-sistema lokalarekiko interfazea eta bezeroarekiko harremanetarako zatia bakarrik dituzte, ez dutelako erabiltzaileekin lan zuzena egiten. Badaude zerbitzari pribatuak (baimendutako erabiltzaileak bakarrik erabili ditzakete) eta publikoak, edozein erabiltzailek erabiltzeko prest anonymous (izengabe) erabiltzaile bezala.              </p>
+              <p class="pFondo">
+                  Protokoloa: zerbitzari batekin harremanetan jartzeko erabiltzaile baten izena eta pasahitza eman behar denez, konexioaren bidezko aplikazio-mailako protokoloa da FTP.                  </p>
+              <p class="pFondo">
+                  Informazioa: beste aplikazioetan ez bezala, FTP-ren bidez elkarri trukatutako informaziorako egiturarik ez da definitzen. Fitxategiak bit-multzoak besterik ez dira. Egia esan, protokoloak badu modu berezia ASCII kodeko fitxategiak mugitzeko, baina erredundantea da. Normalena, aplikazioa bit moduan egikaritzea da.                </p>
+        
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------2----------- -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <h5 class="pFondo">Zer da DNS?</h5>
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+              <p class="pFondo">
+                  DNS edo Domain Name System host-en izenak eta domeinu izenen informazioa gordetzeko sistema bat da, hierarkizatutako eta banatutako datu-base sare moduko batean, Internet adibidez. Garrantzitsuena, host izen bakoitzeko IP helbide bat ematen du, eta domeinu bakoitzaren posta trukaketa zerbitzariak zerrendatzen ditu.              </p>
+              <p class="pFondo">
+                  Honela, edozein sare-aplikaziok (bai bezero-zerbitzari eta baita P2P motakoek) makinak bilatzeko IP helbideak behar dituzte. Baina gizakiontzat askoz errazagoa da izenak ikastea IP helbideen ordez. Horrexegatik DNS zerbitzua existitzen da, gizakiok ezagutzen ditugun izen horietatik (adibidez www.google.com, www.yahoo.es etab.) haien makinei dagozkien IP helbideak lortzeko. Alderantzizko prozesua ere egin behar du DNS-k; hau da, IP helbide batetik domeinuaren izena lortzea.              </p>
+              <p class="pFondo">
+                  DNS zerbitzariak, banatutako eta hierarkizatutako datu base bat erabiltzen du, non Internet bezalako sareetako domeinuen izenen informazioa gordetzen den. Hala izanik, nahiz eta DNS-k era askotako informazioa lotu dezakeen izen bakoitzarekin, erabilera arruntenak IP helbideentzat domeinuen izenak esleitzea eta domeinu bakoitzaren posta elektronikorako zerbitzariak lokalizatzea dira.              </p>
+              <p class="pFondo">
+                  Askotan erabiltzen den analogia bat DNS azaltzeko, telefono-aurkibidearena da, zeinek pertsonen eta haien telefono zenbakien arteko lotura ezartzen duen. DNS-k, era berean, pertsonentzat egokiak diren domeinuen izenen eta hauei dagozkien IP helbideen arteko lotura ezartzen du. Adibidez, www.example.com domeinuaren izena 93.184.216.119 (IPv4) eta 2606:2800:220:6d:26bf:1447:1097:aa7 (IPv6) helbideetan itzultzen du. Telefono-aurkibidea ez bezala, DNS oso azkar berritu daiteke, zerbitzu baten kokapena sarean aldatzea baimenduz, erabiltzaileei eragin gabe, domeinuaren izenak bera izaten jarraituko duelako.              </p>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------3----------- -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <h5 class="pFondo">Zer da Debian?</h5>
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+              <p class="pFondo">
+                  Debian o Proyecto Debian,(en inglés, Debian Project) es una comunidad conformada por desarrolladores y usuarios, que mantiene un sistema operativo GNU basado en software libre. El sistema se encuentra precompilado, empaquetado y en formato deb para múltiples arquitecturas de computador y para varios núcleos.
+              </p>
+              <p class="pFondo">
+                  El proyecto Debian fue anunciado inicialmente 1993 por Ian Murdock. El nombre Debian proviene de la combinación del nombre de su entonces novia Deborah y el suyo, por lo tanto, Deb(orah) e Ian. Debian 0.01 fue lanzado el 15 de septiembre de 1993 y la primera versión estable fue hecha en 1996.
+              </p>
+              <p class="pFondo">
+                  Nació como una apuesta por separar en sus versiones el software libre del software no libre. El modelo de desarrollo del proyecto es ajeno a motivos empresariales o comerciales, siendo llevado adelante por los propios usuarios, aunque cuenta con el apoyo de varias empresas en forma de infraestructuras. Debian no vende directamente su software, lo pone a disposición de cualquiera en Internet, aunque sí permite a personas o empresas distribuirlo comercialmente mientras se respete su licencia.
+              </p>
+              <p class="pFondo">
+                  La comunidad de desarrolladores del proyecto cuenta con la representación de Software in the Public Interest (del inglés, "software de interés público"), una organización sin ánimo de lucro que da cobertura legal a varios proyectos de software libre, con el objetivo inicial de dar cobertura legal al proyecto Debian, tras el fin del patrocinio de la FSF (Free Software Foundation).
+              </p>
+              <p class="pFondo">
+                  La primera adaptación del sistema Debian, siendo también la más desarrollada, es Debian GNU/Linux, basada en el núcleo Linux, y como siempre utilizando herramientas de GNU. Existen también otras adaptaciones con diversos núcleos: Hurd (Debian GNU/Hurd); NetBSD (Debian GNU/NetBSD) y FreeBSD (Debian GNU/kFreeBSD).
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------4----------- -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <h5 class="pFondo">Zer da Proxmox?</h5>
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+              <p class="pFondo">
+                  Proxmox VE es una plataforma de virtualización completa, de nivel empresarial, que está desarrollada
+                  íntegramente en código abierto. Está basado en el hipervisor KVM y en contenedores LXC, el almacenamiento y
+                  la funcionalidad de red se definen por software. Además, permite administrar fácilmente clusters para alta
+                  disponibilidad e incluye herramientas para la recuperación de desastres desde una cómoda interfaz web.
+              </p>
+              <p class="pFondo">
+                  Con Proxmox VE, podemos obtener resultados similares a otros productos de virtualización de alto
+                  rendimiento, como Windows Hyper-V, Citrix XenServer o VMware vSphere. Entre sus características más
+                  sobresalientes podríamos nombrar las siguientes:
+              </p>
+              <p class="pFondo">
+                  Se administra mediante una interfaz web HTML5 que nos permite el acceso desde cualquier equipo de la red.
+                  Incluso desde un teléfono o una tableta.
+                  Podemos hacer copias de seguridad e instantáneas desde la propia interfaz web. Las copias de
+                  seguridad pueden ser inmediatas o programadas. Incluye un cortafuegos que protege la instalación de una
+                  forma sencilla.
+                  Las máquinas virtuales pueden migrar entre varios servidores Proxmox VE para mejorar el
+                  rendimiento.
+              </p>
+              <p class="pFondo">
+                  Sus características de nivel empresarial lo convierten en una opción perfecta para virtualizar una
+                  infraestructura TI, optimizar los recursos existentes y aumentar la eficiencia, a la vez que se reduce el
+                  gasto al mínimo. Además, garantiza la escalabilidad de la instalación a lo largo del tiempo, porque no
+                  limita el número de servidores físicos, ni la cantidad de procesadores utilizados y se integra perfectamente
+                  con almacenamiento NAS o SAN con independencia del modo en el que éste se conecte.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------5----------- -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                <h5 class="pFondo">Zer da Apache?</h5>
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+              <p class="pFondo">
+                  Apache HTTP zerbitzaria, edo soilik Apache, web zerbitzari mota bat da.
+              </p>
+              <p class="pFondo">
+                  Aipatu behar da konfigurazio fitxategiak nagusiki hiru direla: httpd.conf, access.conf eta srm.conf. Hiru hauetatik lehenengoa baino ez da erabiltzen, garapenera dedikatzen direnek esaten dutenaren arabera, argiago delako.
+              </p>
+              <p class="pFondo">
+                  Nola abiarazten den Linux banaketaren araberakoa da. SuSEn adibidez, /etc/init.d/ barruan script bat egongo da. Beste zerbitzu batzuk bezala /etc/init.d/rcapache {start | stop | restart | reload }. Dena den, banaketaz gain, Apache-ren bertsioa ere begiratu beharko da. Egun 2.0 gorakoak erabiltzen dira. whereis apache edo whereis apache2 bezalako aginduak erabilgarriak izango dira.
+              </p>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------6----------- -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                <h5 class="pFondo">Zer da GitHub?</h5>
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="card-body">
+              <p class="pFondo">
+                  GitHub Inc. bertsio kontrolerako web-ostatu zerbitzua da, Git erabiltzen duena. Gehienbat iturburu koderako erabiltzen da. Git-en bertsio-kontrol banatu eta iturburu-kode kudeatzaile funtzionalitate guztiak eskaintzeaz gain bere ezaugarri propioak gehitzen ditu. Sarbide-kontrola eta proiektu bakoitzaren elkarlanerako hainbat aukera hornitzen ditu, esaterako: errore-jarraipena, ezaugarri-eskaera, zeregin-kudeaketa eta wikia. Gaur egunean milioika erabiltzaile ditu, eta milioika garapen-proiektu ere.              </p>
+              <p class="pFondo">
+                  Github bezalako software-bertsioak kontrolatzeko eta partekatzeko plataforma asko sortu izan ziren lehenago, garatzaileek kodea liberatu ahal izateko; besteak beste hauek: SourceForge, Bitbucket eta Google Code (gaur egunean itxita). Baina arazo bat zuten plataforma horiek: garatzaile askok bertsioak kontrolatzeko beren zerbitzaria erabiltzen zutenez baimen kontuak asko konplikatzen ziren. Linus Torvalds Linux sistema eragilearen asmatzaileak bertsioak kontrolatzeko sistema banatu bat sortu zuen (git), non kodearen historia jakin zitekeen, eta behar izanez gero atzera egiteko aukera ere ematen zuen. Geroago GitHub plataforma 2008an sortu zuten ekintzaile batzuek San Frantziskon git sistema banatuari probetxu ateratzeko.              </p>
+              <p class="pFondo">
+                  GitHubek biltegi pribatu eta doaneko kontuak eskaintzen ditu, azken hau, sarri erabiltzen da kode irekiko proiektuak biltegiratzeko. Konpainiaren arabera, 2018ko ekainaz geroztik 28 milioi erabiltzaile eta 57 milioi biltegi (28 milioi biltegi publikoak barne) baino gehiago dituzte, mulduko iturburu kode ostalari handiena bihurtuz.              </p>
+              <p class="pFondo">
+                2018ko ekainaren 4an, Microsoftek iragarri zuen GitHub eskuratzeko akordio batera iritsi zela, 7.5 bilioi dolarren truke. Hodei-konputazioan kokapen nagusi bat lortzeko egin omen zuen hori Microsoftek.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- FINAL DE RESUMENES -->
+    <!-- ------------------ -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 ">
+
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-center">
+
+        <!-- Grid row -->
+        <div class="row justify-content-center">
+          <!-- Nombres -->
+          <ul>
+            <h6 class="col">Creadores</h6>
+          </ul>
+          <ul>
+            <p class="col"> Nahia Maguregi</p>
+          </ul>
+          <ul>
+            <p class="col">Gorka Intxausti</p>
+          </ul>
+          <ul>
+            <p class="col">Rubén González</p>
+          </ul>
+
+        </div>
+
+        <!-- LOGOS -->
+        <div class="row justify-content-center">
+          <ul>
+            <h6 class="col">Asociados</h6>
+          </ul>
+
+          <ul>
+          <a class="col " href="http://www.fptxurdinaga.hezkuntza.net/es/web/Guest">
+            <img class="logos" src="../images/txurdinaga.png" alt="logo">
+          </a>
+          </ul>
+
+          <ul>
+          <a class="col" href="https://www.proxmox.com/en/">
+            <img class="logosFondo" src="../images/Proxomox.png" alt="logo">
+          </a>
+          </ul>
+
+          <ul>
+            <a class="col" href="https://github.com/">
+              <img class="logos" src="../images/Git.png" alt="logo">
+            </a>
+          </ul>
+
+          <ul>
+            <a class="col" href="https://www.proxmox.com/en/">
+              <img class="logos" src="../images/youtube.png" alt="logo">
+            </a>
+          </ul>
+          <ul>
+            <a class="col" href="https://www.debian.org/index.es.html">
+              <img class="logos" src="../images/debian.png" alt="logo">
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+  </body>
+
+</html>

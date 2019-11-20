@@ -1,0 +1,338 @@
+@import url("bootstrap.min.css");
+
+header {
+  background-color: #81afea;
+}
+
+header h1 {
+  margin: 0px;
+  font-size: 25px;
+}
+
+body {
+  background-color: #81afea;
+  margin-bottom: 50px;
+  margin: 0;
+  padding-bottom: 6rem; 
+  height: auto;
+  width: auto;
+}
+
+.breadcrumb {
+  display: none;
+}
+/* ******* */
+
+/* FOOTER */
+footer {
+  background-color: #13263F;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: white;    
+  margin-top: 5%;
+}
+
+.col{
+  color: white;
+}
+
+.logos{
+  width:40px;
+}
+
+.logosFondo{
+  width:40px;
+}
+/* ******** */
+
+
+/* NAVBAR */
+
+.fondo{
+  background-color: #13263F;
+}
+
+.dropdown-menu{
+  background-color: #4C71A1;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+#Creadores {
+  margin-left: 25%;
+  width: 100%;
+}
+
+#Creadores p {
+  color: white;
+}
+
+.fab {
+  color: white;
+}
+
+#navbar {
+  float: right;
+  padding-right: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+hr {
+  width: 70%;
+  margin-bottom: 50px;
+}
+/* *************** */
+
+/* CAROUSEL CSS */
+
+#carousel {
+  height: auto !important;
+  width: 70% !important;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  left: 0;
+  right: 0;
+  background: rgb(199, 199, 199);
+}
+
+h4, .pCarousel {
+  color: black;
+  background: rgba(87, 87, 87, 0.322);
+  margin-top: 20px;
+  text-align: center;
+}
+
+h5 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.explicacion {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+
+#carousel span {
+  background-color: grey;
+  color: black;
+}
+
+.imgCarousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  background-color: rgb(179, 179, 179);
+
+}
+
+.imgCarousel img {
+  flex-grow: 0 !important;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.imgGrande {
+  width: 70%;
+}
+
+.imgLargo {
+  width: 100%;
+}
+
+.imgMuyLargo {
+  width: 100%;
+}
+
+.imgAncho {
+  width: 50%;
+}
+
+/* ********** */
+
+/* BIDEOAK */
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 ratio */
+  padding-top: 30px; /* IE6 workaround*/
+  overflow: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 50%;  
+}
+    
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: black solid 2px;
+}
+
+
+/* LABURPENA */
+
+.card-header:first-child { 
+  background-color: #13263F;
+}
+
+h5 {
+  color: #81AFEA;
+}
+
+.pFondo {
+  color: white;
+}
+
+.mb-0{
+  background-color: #13263F;
+}
+
+.card-body{
+  background-color: rgba(19, 38, 63, 0.863);
+}
+
+/* ----- ADAPTAR DISPOSITIVOS ------ */
+
+/* MOBILE FIRST: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+/* For TABLET: */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .guia {
+    width: 80%;
+    margin-left: 5%;
+    max-width: 300px;   
+  }
+
+  .guia h6 {
+    margin-left: 10%;
+    text-align: justify;
+    font-size:x-large;  
+  }
+
+  .subtituloa {
+    margin-left:15%;
+    width: 70%;
+  }
+
+  .breadcrumb {
+    display: flex;
+  }
+
+  .imgGrande {
+    width: 80%;
+  }
+  
+  .imgLargo {
+    width: 80%;
+  }
+
+  .imgMuyLargo {
+    width: 70%;
+  }
+
+  .imgAncho {
+    width: 50%;
+  }
+
+}
+
+
+/* For DESKTOP: */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}   
+  .breadcrumb {
+    display: flex;
+  }
+
+  .imgGrande {
+    width: 60%;
+  }
+  
+  .imgLargo {
+    width: auto;
+  }
+
+  .imgMuyLargo {
+    width: 100%;
+  }
+
+  .imgAncho {
+    width: auto;
+  }
+
+}
+
+
+/*
+COLORES:
+AZUL1:#81AFEA
+AZUL2:#4C71A1
+AZUL3:#2b4970
+AZUL4:#13263F
+AZUL5:#03080E
+MOREA1:#9E86EC
+MOREA2:#6752A8
+MOREA3:#403075
+MOREA4:#201642
+MOREA5:#06040E
+BERDEA1:#78ECB7
+BERDEA2:#47A97D
+BERDEA3:#277552
+BERDEA4:#10422B
+BERDEA5:#020E09
+*/

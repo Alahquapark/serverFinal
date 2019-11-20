@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <title>Wiki2 Proiektua</title>
+    <link rel="stylesheet" href="../css/wiki.css" type="text/css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark fondo">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logoproyectoWhite.png" alt="logo" style="width:40px;">
+        </a>
+        <ul class="navbar-nav" id="titulo">
+          <li class="nav-item active">
+            <a class="nav-link navbar-brand" href="../index.html">
+              <h1>SERVER WIKI 2</h1>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Hasiera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="laburpena.html">Laburpena</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"> Tutorialak </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="tutorialDebian.html">Debian</a>
+                <a class="dropdown-item" href="tutorialDNS.html">DNS</a>
+                <a class="dropdown-item" href="tutorialFTP.html">FTP</a>
+                <a class="dropdown-item" href="tutorialProxmox.html">Proxmox</a>
+                <a class="dropdown-item active " href="tutorialApache.html">Apache</a>
+                <a class="dropdown-item" href="tutorialGithub.html">Github</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"> Bideoak </a>
+              <div class="dropdown-menu ">
+                <a class="dropdown-item " href="bideoaDebian.html">Debian</a>
+                <a class="dropdown-item " href="bideoaDNS.html">DNS</a>
+                <a class="dropdown-item " href="bideoaFTP.html">FTP</a>
+                <a class="dropdown-item " href="bideoaProxmox.html">Proxmox</a>
+                <a class="dropdown-item " href="bideoaApache.html">Apache</a>
+                <a class="dropdown-item" href="bideoaGithub.html">Github</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------- -->
+
+    <!-- MIGAS -->
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="../index.html">Hasiera</a>
+      <span class="breadcrumb-item active">Tutorial-Apache</span>
+    </nav>
+    <!-- ------------------- -->
+    
+    <h2>Tutorial APACHE</h2>
+    <hr/>
+    <p class="explicacion">Apache web zerbitzari bat da non bertan gure dokumentuak igo ahal izango ditugu.</p>
+
+    <!-- -------------------------------------------- -->
+    <!-- CAROUSEL -->
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="imgCarousel">
+            <img src="../images/apache/01.png" alt="img 01">
+            <img src="../images/apache/02.png" alt="img 02" class="imgLargo">
+
+            <h4>1. PAUSOA</h4>
+            <p>Hasteko, sistema eragilea eguneratu beharko dugu eta hori egin eta gero segidan apache instalatu beharko
+              dugu. Dependetziak konfirmatu eta gero instalazioa bukatzerakoan localhost-era sartu beharko gara ikusteko
+              ea ondo instalatu den. Esan beharra dago gure dokukentuak /var/www/html karpetan gordetzen direla.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="imgCarousel">
+            <img src="../images/apache/01.png" alt="img 01">
+            <img src="../images/apache/03.png" alt="img 03" class="imgLargo">
+
+            <h4>2. PAUSOA</h4>
+            <p>Instalatuta daukagunean, Apacheko prozesuak limitatu beharko ditugu. Hori egin ahal izateko, Apacheko
+              modulu bat instalatu beharko dugu MPM Prefolk izenekoa. Berriz aktualizatu eta instalazioarekin hasiko gara.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="imgCarousel">
+            <img src="../images/apache/04.png" alt="img 04" class="imgLargo">
+            <img src="../images/apache/05.png" alt="img 05" class="imgLargo">
+            <img src="../images/apache/restart.png" alt="img restart" class="imgLargo">
+
+            <h4>3. PAUSOA</h4>
+            <p>Hori egiterakoan, konfigurazio fitxategia editatu beharkodugu, hau da, ‘apache2.conf’ fitxategian hau jarri
+              behar dugu. Eta hori egin eta gero berriz ere Apache berrabiarazi beharko dugu.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="imgCarousel">
+            <img src="../images/apache/06.png" alt="img 06" class="imgLargo">
+            <img src="../images/apache/07.png" alt="img 07" class="imgLargo">
+
+            <h4>4. PAUSOA</h4>
+            <p>Hori egin eta gero, zerbitzari birtualak konfiguratzen hasi beharko gara. Hasteko, orrialdearen
+              konfigurazio fitxategia editatu beharko dugu. Hemen, petizioei zein orrialde erakutsi beharko dien jarriko
+              diogu.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="imgCarousel">
+            <img src="../images/apache/08.png" alt="img 08" class="imgLargo">
+
+            <h4>5. PAUSOA</h4>
+            <p>Adibidez, fitxategi hori irekitzen dugunean honelako zerbait agertuko zaigu, hemen gure datuak sartuko
+              ditugu. Gure kasuan honelako datuak izango ditu, gure web orrialdea honela deituko delako.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="imgCarousel">
+            <img src="../images/apache/09.png" alt="img 09" class="imgLargo">
+
+            <h4>6. PAUSOA</h4>
+            <p>Hori egin eta gero, gure orrialdea sortu beharko dugu, gurea ‘www.euskaraDaw.com’ deituko da eta bertan
+              gure index.html-a jarriko diogu. Baina, ez badaukagu direktoria sortuta ezer ere ez sortuta, hau egin
+              beharko zen.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="imgCarousel">
+            <img src="../images/apache/10.png" alt="img 10" class="imgLargo">
+            <img src="../images/apache/11.png" alt="img 11" class="imgLargo">
+
+            <h4>7. PAUSOA</h4>
+            <p>Amaitzeko, gure index.html-a lehen sortutako direktorioan sartu beharko dugu, hórrela gure web orrialdera
+              sartzerakoan orrialde hori agertuko zaio bezeroari. Apache balidatzeko komando hau egin eta gero berrabirazi
+              egin beharko dugu zerbitzua.</p>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 ">
+
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-center">
+
+        <!-- Grid row -->
+        <div class="row justify-content-center">
+          <!-- Nombres -->
+          <ul>
+            <h6 class="col">Creadores</h6>
+          </ul>
+          <ul>
+            <p class="col"> Nahia Maguregi</p>
+          </ul>
+          <ul>
+            <p class="col">Gorka Intxausti</p>
+          </ul>
+          <ul>
+            <p class="col">Rubén González</p>
+          </ul>
+
+        </div>
+
+        <!-- LOGOS -->
+        <div class="row justify-content-center">
+          <ul>
+            <h6 class="col">Asociados</h6>
+          </ul>
+
+          <ul>
+            <a class="col" href="http://www.fptxurdinaga.hezkuntza.net/es/web/Guest">
+              <img class="logos" src="../images/txurdinaga.png" alt="logo" style="width:42px;">
+            </a>
+          </ul>
+
+          <ul>
+            <a class="col" href="https://www.proxmox.com/en/">
+              <img class="logosFondo" src="../images/Proxomox.png" alt="logo" style="width:40px;">
+            </a>
+          </ul>
+
+          <ul>
+            <a class="col" href="https://github.com/">
+              <img class="logos" src="../images/Git.png" alt="logo">
+            </a>
+          </ul>
+
+          <ul>
+            <a class="col" href="https://www.proxmox.com/en/">
+              <img class="logos" src="../images/youtube.png" alt="logo">
+            </a>
+          </ul>
+          <ul>
+            <a class="col" href="https://www.debian.org/index.es.html">
+              <img class="logos" src="../images/debian.png" alt="logo">
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+  </body>
+
+</html>
