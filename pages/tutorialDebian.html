@@ -39,7 +39,7 @@
               <a class="nav-link" href="laburpena.html">Laburpena</a>
             </li>
             <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"> Tutorialak </a>
+              <a class="nav-link dropdown-toggle active" id="navbardrop" data-toggle="dropdown"> Tutorialak </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item active " href="tutorialDebian.html">Debian</a>
                 <a class="dropdown-item" href="tutorialDNS.html">DNS</a>
@@ -76,6 +76,8 @@
 
     <h2>Tutorial DEBIAN</h2>
     <hr/>
+    <p class="explicacion">Gure zerbitzarian Debian sistema eragilea instalatuko dugu eta bertan hainbat gauza konfiguratuko dugu, adibidez, DNSa, Apache eta FTP-a ere bai. </p>
+
     <!-- -------------------------------------------- -->
     <!-- CAROUSEL -->
     <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -86,75 +88,73 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
       </ol>
 
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="imgCarousel">
-            <img src="../images/dns/01.png" alt="img 01">
-            <img src="../images/dns/02.png" alt="img 02">
+            <img src="../images/debian/01.png" alt="img 01" class="imgGrande">
 
             <h4>1. PAUSOA</h4>
-            <p>ProFTP zerbitzaria erabiliko dugu fitxategien transferentzia egin ahal izateko. Hasteko, esan beharra dago
-              Debian sistema eragilea erabiliko dugula hori egin ahal izateko. Orduan, sistema eragilea eguneratu eta
-              ProFTP hau instalatu behar dugu.</p>
+            <p>Makina birtualaren hizkuntza ezartzen dugu.</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <div class="imgCarousel">
-            <img src="../images/dns/03.png" alt="img 03">
-            <img src="../images/dns/04.png" alt="img 04">
+            <img src="../images/debian/02.png" alt="img 02" class="imgGrande">
 
             <h4>2. PAUSOA</h4>
-            <p>DNSMASQ dns forward bat da, hau da, ez daki rootservers-era joaten, horretarako guk geuk esan behar diogu
-              zein dns-ra bideratu behar den. Horretarako ‘resolv.dnsmasq.conf’' fitxategia editatu behar dugu 10.9.52.104
-              jarriz.</p>
+            <p>Domeinuaren izena ezartzen dugu.</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <div class="imgCarousel">
-            <img src="../images/dns/05.png" alt="img 05">
-            <img src="../images/dns/06.png" alt="img 06">
+            <img src="../images/debian/03.png" alt="img 03" class="imgGrande">
 
             <h4>3. PAUSOA</h4>
-            <p>Hori egin eta gero, ‘dnsmasq.conf’ fitxategian lerro bat deskomentatu behar dugu.</p>
+            <p>Makinaren izena ezartzen dugu.</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <div class="imgCarousel">
-            <img src="../images/dns/07.png" alt="img 07">
-            <img src="../images/dns/08.png" alt="img 08">
+            <img src="../images/debian/04.png" alt="img 04" class="imgGrande">
 
             <h4>4. PAUSOA</h4>
-            <p>Segidan, ‘resolv.conf’ fitxategian gure zerbitzariko IPa jarri beharko dugu.</p>
+            <p>Super erabiltzailearen pasahitza ezartzen dugu.</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <div class="imgCarousel">
-            <img src="../images/dns/07.png" alt="img 09">
-            <img src="../images/dns/08.png" alt="img 10">
+            <img src="../images/debian/05.png" alt="img 05" class="imgGrande">
 
             <h4>5. PAUSOA</h4>
-            <p>Amaitzen joateko, ‘hosts’ fitxategian gure web orrialdearen izena jarri beharko dugu, gure kasuan
-              www.euskaradaw.com izango da.</p>
+            <p>Erabiltzaile berria sortzen dugu.</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <div class="imgCarousel">
-            <img src="../images/dns/07.png" alt="img 11">
-            <img src="../images/dns/08.png" alt="img 12">
+            <img src="../images/debian/06.png" alt="img 06" class="imgGrande">
 
             <h4>6. PAUSOA</h4>
-            <p>Azkenik, zerbait aldatzen dugun bakoitzean zerbitzaria berrabiarazi behar dugu eta orduan link hori
-              jartzerako orduan gure apacheko orrialdea hasi behar da.</p>
+            <p>Instalatu nahi dugun aplikazioak hautatzen dugu.</p>
           </div>
         </div>
+        
+        <div class="carousel-item">
+          <div class="imgCarousel">
+            <img src="../images/debian/07.png" alt="img 07" class="imgGrande">
 
+            <h4>7. PAUSOA</h4>
+            <p>Instalazioa bukatzean, Debianekin hasi ahal gara.</p>
+          </div>
+        </div>
+        
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
